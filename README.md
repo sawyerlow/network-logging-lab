@@ -27,11 +27,17 @@ This project demonstrates logging HTTP requests to logs.json, tracking request c
 ![TCP Handshake](screenshots/tcp_handshake.png)  
 ## TCP Handshake: Shows the initial three-way handshake between client and server (SYN → SYN/ACK → ACK) to establish a connection before any data is exchanged.
 
+
+
 ![HTTP GET Request](screenshots/http_get.png)  
 ## HTTP GET Request: The browser requests the home page (`/`). This request is captured by Wireshark and logged by the Flask server.
 
+
+
 ![HTTP Response](screenshots/http_response.png)  
 ## HTTP Response: The Flask server responds to the GET request with a simple welcome message, which is captured by Wireshark.
+
+
 
 ![Suspicious Log](screenshots/suspicious_log.png)
 ## Suspicious Detection: The server flags this IP as suspicious after more than 10 requests. The `logs.json` file records timestamp, IP, request method, path, user agent, and suspicious status.
